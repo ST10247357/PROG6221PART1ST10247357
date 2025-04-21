@@ -20,7 +20,7 @@ namespace PROG6221PART1ST10247357
                 {
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.DarkGray;// Changes the colour of the bot's input
-                    Console.WriteLine("Bot: What is your name?");// Asks the user for their name
+                    Console.WriteLine("Assistant: What is your name?");// Asks the user for their name
                     Console.ResetColor();
 
                     name = Console.ReadLine();
@@ -40,7 +40,7 @@ namespace PROG6221PART1ST10247357
                     // Handle exception for empty name input
                     Console.ForegroundColor = ConsoleColor.Red;// Changes the colour of the error message
                     Console.WriteLine("------------------------------------------------------------------------------------------------------"); 
-                    Console.WriteLine($"Bot: {ex.Message}");
+                    Console.WriteLine($"Assistant: {ex.Message}");
                     Console.WriteLine("------------------------------------------------------------------------------------------------------"); 
                     Console.WriteLine(""); // Leave a line
                     Console.ResetColor();
